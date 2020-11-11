@@ -35,7 +35,7 @@ public class Main extends Application {
 		root.setPrefSize(500, 500);
 		numberTextField = new TextField();
 		goButton = new Button("Go");
-		NextButton = new Button("next");
+		NextButton = new Button("Next");
 		messageLabel = new Label();
 		fibonacciLabel = new Label();
 		nthLabel = new Label();
@@ -64,7 +64,7 @@ public class Main extends Application {
 
 		         // create ExecutorService to manage threads
 		         ExecutorService executorService = 
-		            Executors.newFixedThreadPool(1); // pool of one thread
+		            Executors.newFixedThreadPool(1); // max pool thread is 1
 		         executorService.execute(task); // start the task
 		         executorService.shutdown();
 		      }
